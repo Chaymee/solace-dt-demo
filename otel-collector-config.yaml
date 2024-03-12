@@ -10,8 +10,8 @@ exporters:
   logging:
     loglevel: "info"
 
-  jaeger:
-    endpoint: jaeger-all-in-one:14250
+  otlp/jaeger:
+    endpoint: jaeger-all-in-one:4317
     tls:
       insecure: true
 
@@ -41,4 +41,4 @@ service:
     traces:
       receivers: [solace, otlp]
       processors: [batch, memory_limiter]
-      exporters: [jaeger, logging]
+      exporters: [otlp/jaeger, logging]
