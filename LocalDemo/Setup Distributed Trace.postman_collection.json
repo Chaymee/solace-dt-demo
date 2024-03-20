@@ -234,7 +234,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"msgVpnName\": \"{{msg_vpn}}\",\n  \"subscription\": \">\",\n  \"subscriptionSyntax\": \"smf\",\n  \"telemetryProfileName\": \"{{telemetry_profile}}\",\n  \"traceFilterName\": \"{{trace_filter}}\"\n}"
+					"raw": "{\n  \"msgVpnName\": \"{{msg_vpn}}\",\n  \"subscription\": \"solace/tracing\",\n  \"subscriptionSyntax\": \"smf\",\n  \"telemetryProfileName\": \"{{telemetry_profile}}\",\n  \"traceFilterName\": \"{{trace_filter}}\"\n}"
 				},
 				"url": {
 					"raw": "http://{{host}}:{{semp_port}}/SEMP/v2/config/msgVpns/{{msg_vpn}}/telemetryProfiles/trace/traceFilters/{{msg_username}}/subscriptions",

@@ -61,6 +61,10 @@ services:
       - "5550:5550"
       - "1943:1943"
       - "8008:8008"
+      #REST Default VPN
+      - '9000:9000'
+      #REST Default VPN over TLS
+      - '9443:9443'
     shm_size: 2g
     ulimits:
       memlock: -1
